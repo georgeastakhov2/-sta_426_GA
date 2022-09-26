@@ -1,0 +1,21 @@
+---
+title: "w_1_GA"
+format: html
+editor: visual
+---
+
+# Week 1
+
+```{r}
+#| echo: false
+
+par(mfrow = c(1,2))
+x <- rnbinom(n = 100, size = 2, mu = 10)
+hist(x)
+hist(log(x+1))
+
+mean_x <- mean(x)
+var_x <- var(x)
+```
+
+We sample random variables with given mean and dispersion. Afterwards we calculate mean, which is `r mean_x` and variance, which is `r var_x`
